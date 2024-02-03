@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: grab;
+
+}
+body{
+    font: 1.5remm;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+min-height: 100vh;
+background-color: black;
+color:  brown;
+display: flex;
+flex-direction: column;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ display: block;
+margin-left: auto;
+margin-right: auto; 
+}
+.nowrap{
+    white-space: nowrap;
+}
+header,main,nav,footer{
+place-content: center;
+grid-template-columns: 100%;
+text-align: center;
+top: 0;
+border-bottom: 2px solid brown;
+flex-grow: 1;
+}
+nav{
+    border-bottom: 2px;
+    padding: 0.5rem;
+    font-weight: bolder;
+font-display: flex;
+    justify-content: space-evenly;
+    color: blueviolet;
+}
+.card{
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: aliceblue;
+    border: 2px black;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+flex-direction: column ;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+.card figure{
+    display: flex;
+    flex-flow: column-reverse;
+}
+.card img{
+    border-radius: 50%;
+    border: 5px;
+}
+.card figcaption{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav a{
+    display:block;
+}
+nav a,
+nav a:visited{
+    text-decoration: dotted;
+  }
+nav a:hover,
+nav a:focus{
+    background-color: white;
+    cursor: pointer;
+}
+button:hover,input:hover{
+    cursor: pointer;
+    border-style: groove;
+    background-color: aqua;
+    border-color: hotpink;
+    cursor: default;
+}
+button,input{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
